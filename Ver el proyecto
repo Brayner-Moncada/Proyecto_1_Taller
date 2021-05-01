@@ -1,3 +1,4 @@
+
 #Proyecto Programado Brayner Moncada
 #Nombre del juego: Operation moon light
 
@@ -64,26 +65,39 @@ button_iniciar.place(x=400,y=500)#boton para inciar una nueva partida
 button_abandonar = tkinter.Button(v_nivel_1 , text = "ABANDONAR PARTIDA",command = abandonar,bg="Red")
 button_abandonar.place(x=350,y=450)#VOlver de la partida
 
-button_salon = tkinter.Button(v_bienvenida,text= "Salon de la Fama",command = salon_fama,bg = "Green")
-button_salon.place(x=400,y=100)
+button_salon = tkinter.Button(v_bienvenida,text= "Mejores Puntajes",command = salon_fama,bg = "Green")
+button_salon.place(x=100,y=120)
 
 button_volver= tkinter.Button(v_salon , text = "volver",command = abandonar,bg="Red")
-button_volver.place(x=400,y=150)#Volver de salon de la fama
+button_volver.place(x=400,y=250)#Volver de salon de la fama
 
 button_niveles= tkinter.Button(v_bienvenida, text = "NIVELES DISPONIBLES",command = ir_niveles,bg="Red")
-button_niveles.place(x=400,y=200)#Niveles del juego
+button_niveles.place(x=300,y=120)#Niveles del juego
 
 button_regresar= tkinter.Button(v_niveles , text = "volver",command = abandonar,bg="Red")
-button_regresar.place(x=350,y=250)#Volver de niveles disponibles
+button_regresar.place(x=400,y=250)#Volver de niveles disponibles
 
 
 button_progra= tkinter.Button(v_bienvenida, text = "Creador del Programa",command = ir_info,bg="Turquoise")
-button_progra.place(x=400,y=200)#informacion del programador
+button_progra.place(x=500,y=120)#informacion del programador
 
 button_r= tkinter.Button(v_programador , text = "volver",command = abandonar,bg="Red")
 button_r.place(x=350,y=250)#Volver de informacion del programador
 
 
+button_primero= tkinter.Button(v_niveles, text = "Primer Nivel",bg="Turquoise")
+button_primero.place(x=200,y=120)#ir al nivel 1
+
+button_segundo= tkinter.Button(v_niveles , text = "Segundo Nivel",bg="Turquoise")
+button_segundo.place(x=300,y=120)#ir al nivel 2
+
+
+button_tercero= tkinter.Button(v_niveles, text = "Tercer Nivel",bg="Turquoise")
+button_tercero.place(x=400,y=120)#ir al nivel 3
+
+
+
 
 menu.pack()
+
 
